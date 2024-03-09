@@ -1,0 +1,26 @@
+---
+title: "Marketikng Mix Modeling"
+format: 
+  html:
+    toc: true
+    toc-depth: 4
+    code-fold: true
+editor: visual
+---
+
+# Exploratory Data Analysis
+
+## Packages
+
+```{r}
+
+library(tidyverse)
+library(janitor)
+library(scales)
+```
+
+## Data
+
+```{r}
+data <- read_csv("data_fourtex.csv")
+```
