@@ -3222,7 +3222,7 @@ window.Quarto = {
 
 <div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
 <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-  <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="-1">
+  <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
@@ -3253,7 +3253,10 @@ window.Quarto = {
   <li><a href="#line-plot-base-r" id="toc-line-plot-base-r" class="nav-link" data-scroll-target="#line-plot-base-r"><span class="header-section-number">4.4.1</span> line plot (Base R)</a></li>
   <li><a href="#line-plot-tidyverse" id="toc-line-plot-tidyverse" class="nav-link" data-scroll-target="#line-plot-tidyverse"><span class="header-section-number">4.4.2</span> line plot (tidyverse)</a></li>
   </ul></li>
-  <li><a href="#model-diagnostics" id="toc-model-diagnostics" class="nav-link" data-scroll-target="#model-diagnostics"><span class="header-section-number">4.5</span> Model Diagnostics</a></li>
+  <li><a href="#model-diagnostics" id="toc-model-diagnostics" class="nav-link" data-scroll-target="#model-diagnostics"><span class="header-section-number">4.5</span> Model Diagnostics</a>
+  <ul class="collapse">
+  <li><a href="#core-assumptions-of-linear-regression" id="toc-core-assumptions-of-linear-regression" class="nav-link" data-scroll-target="#core-assumptions-of-linear-regression"><span class="header-section-number">4.5.1</span> Core Assumptions of Linear Regression</a></li>
+  </ul></li>
   </ul></li>
   <li><a href="#what-drives-web-traffic-performance" id="toc-what-drives-web-traffic-performance" class="nav-link" data-scroll-target="#what-drives-web-traffic-performance"><span class="header-section-number">5</span> What drives web traffic performance?</a>
   <ul>
@@ -3340,7 +3343,10 @@ window.Quarto = {
   <li><a href="#line-plot-base-r" id="toc-line-plot-base-r"><span class="header-section-number">4.4.1</span> line plot (Base R)</a></li>
   <li><a href="#line-plot-tidyverse" id="toc-line-plot-tidyverse"><span class="header-section-number">4.4.2</span> line plot (tidyverse)</a></li>
   </ul></li>
-  <li><a href="#model-diagnostics" id="toc-model-diagnostics"><span class="header-section-number">4.5</span> Model Diagnostics</a></li>
+  <li><a href="#model-diagnostics" id="toc-model-diagnostics"><span class="header-section-number">4.5</span> Model Diagnostics</a>
+  <ul>
+  <li><a href="#core-assumptions-of-linear-regression" id="toc-core-assumptions-of-linear-regression"><span class="header-section-number">4.5.1</span> Core Assumptions of Linear Regression</a></li>
+  </ul></li>
   </ul></li>
   <li><a href="#what-drives-web-traffic-performance" id="toc-what-drives-web-traffic-performance"><span class="header-section-number">5</span> What drives web traffic performance?</a>
   <ul>
@@ -3384,20 +3390,20 @@ window.Quarto = {
 <p>Next day, she pulled some data from the company’s database, taking her notes. The table below provides a brief description of her data set:</p>
 <div class="cell">
 <div class="cell-output-display">
-<div id="xkzslciyhr" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#xkzslciyhr table {
+<div id="mnasbjqiwu" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#mnasbjqiwu table {
 font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 -webkit-font-smoothing: antialiased;
 -moz-osx-font-smoothing: grayscale;
 }
-#xkzslciyhr thead, #xkzslciyhr tbody, #xkzslciyhr tfoot, #xkzslciyhr tr, #xkzslciyhr td, #xkzslciyhr th {
+#mnasbjqiwu thead, #mnasbjqiwu tbody, #mnasbjqiwu tfoot, #mnasbjqiwu tr, #mnasbjqiwu td, #mnasbjqiwu th {
 border-style: none;
 }
-#xkzslciyhr p {
+#mnasbjqiwu p {
 margin: 0;
 padding: 0;
 }
-#xkzslciyhr .gt_table {
+#mnasbjqiwu .gt_table {
 display: table;
 border-collapse: collapse;
 line-height: normal;
@@ -3422,11 +3428,11 @@ border-left-style: none;
 border-left-width: 2px;
 border-left-color: #D3D3D3;
 }
-#xkzslciyhr .gt_caption {
+#mnasbjqiwu .gt_caption {
 padding-top: 4px;
 padding-bottom: 4px;
 }
-#xkzslciyhr .gt_title {
+#mnasbjqiwu .gt_title {
 color: #333333;
 font-size: 125%;
 font-weight: initial;
@@ -3437,7 +3443,7 @@ padding-right: 5px;
 border-bottom-color: #FFFFFF;
 border-bottom-width: 0;
 }
-#xkzslciyhr .gt_subtitle {
+#mnasbjqiwu .gt_subtitle {
 color: #333333;
 font-size: 85%;
 font-weight: initial;
@@ -3448,7 +3454,7 @@ padding-right: 5px;
 border-top-color: #FFFFFF;
 border-top-width: 0;
 }
-#xkzslciyhr .gt_heading {
+#mnasbjqiwu .gt_heading {
 background-color: #FFFFFF;
 text-align: center;
 border-bottom-color: #FFFFFF;
@@ -3459,12 +3465,12 @@ border-right-style: none;
 border-right-width: 1px;
 border-right-color: #D3D3D3;
 }
-#xkzslciyhr .gt_bottom_border {
+#mnasbjqiwu .gt_bottom_border {
 border-bottom-style: solid;
 border-bottom-width: 2px;
 border-bottom-color: #D3D3D3;
 }
-#xkzslciyhr .gt_col_headings {
+#mnasbjqiwu .gt_col_headings {
 border-top-style: solid;
 border-top-width: 2px;
 border-top-color: #D3D3D3;
@@ -3478,7 +3484,7 @@ border-right-style: none;
 border-right-width: 1px;
 border-right-color: #D3D3D3;
 }
-#xkzslciyhr .gt_col_heading {
+#mnasbjqiwu .gt_col_heading {
 color: #333333;
 background-color: #FFFFFF;
 font-size: 100%;
@@ -3497,7 +3503,7 @@ padding-left: 5px;
 padding-right: 5px;
 overflow-x: hidden;
 }
-#xkzslciyhr .gt_column_spanner_outer {
+#mnasbjqiwu .gt_column_spanner_outer {
 color: #333333;
 background-color: #FFFFFF;
 font-size: 100%;
@@ -3508,13 +3514,13 @@ padding-bottom: 0;
 padding-left: 4px;
 padding-right: 4px;
 }
-#xkzslciyhr .gt_column_spanner_outer:first-child {
+#mnasbjqiwu .gt_column_spanner_outer:first-child {
 padding-left: 0;
 }
-#xkzslciyhr .gt_column_spanner_outer:last-child {
+#mnasbjqiwu .gt_column_spanner_outer:last-child {
 padding-right: 0;
 }
-#xkzslciyhr .gt_column_spanner {
+#mnasbjqiwu .gt_column_spanner {
 border-bottom-style: solid;
 border-bottom-width: 2px;
 border-bottom-color: #D3D3D3;
@@ -3525,10 +3531,10 @@ overflow-x: hidden;
 display: inline-block;
 width: 100%;
 }
-#xkzslciyhr .gt_spanner_row {
+#mnasbjqiwu .gt_spanner_row {
 border-bottom-style: hidden;
 }
-#xkzslciyhr .gt_group_heading {
+#mnasbjqiwu .gt_group_heading {
 padding-top: 8px;
 padding-bottom: 8px;
 padding-left: 5px;
@@ -3553,7 +3559,7 @@ border-right-color: #D3D3D3;
 vertical-align: middle;
 text-align: left;
 }
-#xkzslciyhr .gt_empty_group_heading {
+#mnasbjqiwu .gt_empty_group_heading {
 padding: 0.5px;
 color: #333333;
 background-color: #FFFFFF;
@@ -3567,13 +3573,13 @@ border-bottom-width: 2px;
 border-bottom-color: #D3D3D3;
 vertical-align: middle;
 }
-#xkzslciyhr .gt_from_md > :first-child {
+#mnasbjqiwu .gt_from_md > :first-child {
 margin-top: 0;
 }
-#xkzslciyhr .gt_from_md > :last-child {
+#mnasbjqiwu .gt_from_md > :last-child {
 margin-bottom: 0;
 }
-#xkzslciyhr .gt_row {
+#mnasbjqiwu .gt_row {
 padding-top: 8px;
 padding-bottom: 8px;
 padding-left: 5px;
@@ -3591,7 +3597,7 @@ border-right-color: #D3D3D3;
 vertical-align: middle;
 overflow-x: hidden;
 }
-#xkzslciyhr .gt_stub {
+#mnasbjqiwu .gt_stub {
 color: #333333;
 background-color: #FFFFFF;
 font-size: 100%;
@@ -3603,7 +3609,7 @@ border-right-color: #D3D3D3;
 padding-left: 5px;
 padding-right: 5px;
 }
-#xkzslciyhr .gt_stub_row_group {
+#mnasbjqiwu .gt_stub_row_group {
 color: #333333;
 background-color: #FFFFFF;
 font-size: 100%;
@@ -3616,13 +3622,13 @@ padding-left: 5px;
 padding-right: 5px;
 vertical-align: top;
 }
-#xkzslciyhr .gt_row_group_first td {
+#mnasbjqiwu .gt_row_group_first td {
 border-top-width: 2px;
 }
-#xkzslciyhr .gt_row_group_first th {
+#mnasbjqiwu .gt_row_group_first th {
 border-top-width: 2px;
 }
-#xkzslciyhr .gt_summary_row {
+#mnasbjqiwu .gt_summary_row {
 color: #333333;
 background-color: #FFFFFF;
 text-transform: inherit;
@@ -3631,14 +3637,14 @@ padding-bottom: 8px;
 padding-left: 5px;
 padding-right: 5px;
 }
-#xkzslciyhr .gt_first_summary_row {
+#mnasbjqiwu .gt_first_summary_row {
 border-top-style: solid;
 border-top-color: #D3D3D3;
 }
-#xkzslciyhr .gt_first_summary_row.thick {
+#mnasbjqiwu .gt_first_summary_row.thick {
 border-top-width: 2px;
 }
-#xkzslciyhr .gt_last_summary_row {
+#mnasbjqiwu .gt_last_summary_row {
 padding-top: 8px;
 padding-bottom: 8px;
 padding-left: 5px;
@@ -3647,7 +3653,7 @@ border-bottom-style: solid;
 border-bottom-width: 2px;
 border-bottom-color: #D3D3D3;
 }
-#xkzslciyhr .gt_grand_summary_row {
+#mnasbjqiwu .gt_grand_summary_row {
 color: #333333;
 background-color: #FFFFFF;
 text-transform: inherit;
@@ -3656,7 +3662,7 @@ padding-bottom: 8px;
 padding-left: 5px;
 padding-right: 5px;
 }
-#xkzslciyhr .gt_first_grand_summary_row {
+#mnasbjqiwu .gt_first_grand_summary_row {
 padding-top: 8px;
 padding-bottom: 8px;
 padding-left: 5px;
@@ -3665,7 +3671,7 @@ border-top-style: double;
 border-top-width: 6px;
 border-top-color: #D3D3D3;
 }
-#xkzslciyhr .gt_last_grand_summary_row_top {
+#mnasbjqiwu .gt_last_grand_summary_row_top {
 padding-top: 8px;
 padding-bottom: 8px;
 padding-left: 5px;
@@ -3674,10 +3680,10 @@ border-bottom-style: double;
 border-bottom-width: 6px;
 border-bottom-color: #D3D3D3;
 }
-#xkzslciyhr .gt_striped {
+#mnasbjqiwu .gt_striped {
 background-color: rgba(128, 128, 128, 0.05);
 }
-#xkzslciyhr .gt_table_body {
+#mnasbjqiwu .gt_table_body {
 border-top-style: solid;
 border-top-width: 2px;
 border-top-color: #D3D3D3;
@@ -3685,7 +3691,7 @@ border-bottom-style: solid;
 border-bottom-width: 2px;
 border-bottom-color: #D3D3D3;
 }
-#xkzslciyhr .gt_footnotes {
+#mnasbjqiwu .gt_footnotes {
 color: #333333;
 background-color: #FFFFFF;
 border-bottom-style: none;
@@ -3698,7 +3704,7 @@ border-right-style: none;
 border-right-width: 2px;
 border-right-color: #D3D3D3;
 }
-#xkzslciyhr .gt_footnote {
+#mnasbjqiwu .gt_footnote {
 margin: 0px;
 font-size: 90%;
 padding-top: 4px;
@@ -3706,7 +3712,7 @@ padding-bottom: 4px;
 padding-left: 5px;
 padding-right: 5px;
 }
-#xkzslciyhr .gt_sourcenotes {
+#mnasbjqiwu .gt_sourcenotes {
 color: #333333;
 background-color: #FFFFFF;
 border-bottom-style: none;
@@ -3719,64 +3725,64 @@ border-right-style: none;
 border-right-width: 2px;
 border-right-color: #D3D3D3;
 }
-#xkzslciyhr .gt_sourcenote {
+#mnasbjqiwu .gt_sourcenote {
 font-size: 90%;
 padding-top: 4px;
 padding-bottom: 4px;
 padding-left: 5px;
 padding-right: 5px;
 }
-#xkzslciyhr .gt_left {
+#mnasbjqiwu .gt_left {
 text-align: left;
 }
-#xkzslciyhr .gt_center {
+#mnasbjqiwu .gt_center {
 text-align: center;
 }
-#xkzslciyhr .gt_right {
+#mnasbjqiwu .gt_right {
 text-align: right;
 font-variant-numeric: tabular-nums;
 }
-#xkzslciyhr .gt_font_normal {
+#mnasbjqiwu .gt_font_normal {
 font-weight: normal;
 }
-#xkzslciyhr .gt_font_bold {
+#mnasbjqiwu .gt_font_bold {
 font-weight: bold;
 }
-#xkzslciyhr .gt_font_italic {
+#mnasbjqiwu .gt_font_italic {
 font-style: italic;
 }
-#xkzslciyhr .gt_super {
+#mnasbjqiwu .gt_super {
 font-size: 65%;
 }
-#xkzslciyhr .gt_footnote_marks {
+#mnasbjqiwu .gt_footnote_marks {
 font-size: 75%;
 vertical-align: 0.4em;
 position: initial;
 }
-#xkzslciyhr .gt_asterisk {
+#mnasbjqiwu .gt_asterisk {
 font-size: 100%;
 vertical-align: 0;
 }
-#xkzslciyhr .gt_indent_1 {
+#mnasbjqiwu .gt_indent_1 {
 text-indent: 5px;
 }
-#xkzslciyhr .gt_indent_2 {
+#mnasbjqiwu .gt_indent_2 {
 text-indent: 10px;
 }
-#xkzslciyhr .gt_indent_3 {
+#mnasbjqiwu .gt_indent_3 {
 text-indent: 15px;
 }
-#xkzslciyhr .gt_indent_4 {
+#mnasbjqiwu .gt_indent_4 {
 text-indent: 20px;
 }
-#xkzslciyhr .gt_indent_5 {
+#mnasbjqiwu .gt_indent_5 {
 text-indent: 25px;
 }
-#xkzslciyhr .katex-display {
+#mnasbjqiwu .katex-display {
 display: inline-flex !important;
 margin-bottom: 0.75em !important;
 }
-#xkzslciyhr div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#mnasbjqiwu div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
 height: 0px !important;
 }
 </style>
@@ -4228,7 +4234,7 @@ Why add 1?
 #   L1.lntraffic &lt;dbl&gt;</code></pre>
 </div>
 </div>
-<p>Now, let’s run our model in R Markdown:</p>
+<p>Now, let’s run our model in R Quarto:</p>
 <div class="cell">
 <details open class="code-fold">
 <summary>Code</summary>
@@ -4323,10 +4329,10 @@ Explanation of the code chunk above
 <p><strong>Coefficient estimates</strong>:</p>
 <p>We can write down the estimated coefficients of this marketing mix model in an equation format:</p>
 <p><span class="math inline">\(ln(Traffic_t)= 3.151 + 0.536 ln(Traffic_{t-1}) + 0.155 ln(Adwords_t) + \\ 0.194 ln(Facebook_t) + 0.005 ln(TV_t) + 0.007 ln(Radio_t)\)</span></p>
-<p>The standard error of each coefficient shows at what precision level we estimated that particular coefficient, i.e. represents the uncertainty surrounding that coefficient. The t-value is obtained by dividing the coefficient by its standard error. P-value, Pr(&gt;|t|), is computed based on the t-value, and helps us understand whether the coefficient is statistically significant. For example, lagged traffic is a strong indicator of next period’s traffic as it is highly significant (p-value is close to zero). The effect of Facebook ads is significant at 1% level while Google AdWords and Radio effects are significant at 10% level. Finally, the effect of TV ads is not statistically significant.</p>
+<p>The standard error of each coefficient shows at what precision level we estimated that particular coefficient, i.e. represents the uncertainty surrounding that coefficient. The t-value is obtained by dividing the coefficient by its standard error. P-value, Pr(&gt;|t|), is computed based on the t-value, and helps us understand whether the coefficient is statistically significant. For example, lagged traffic is a strong indicator of the next period’s traffic as it is highly significant (p-value is close to zero). The effect of Facebook ads is significant at 1% level while Google AdWords and Radio effects are significant at 10% level. Finally, the effect of TV ads is not statistically significant.</p>
 <section id="how-to-interpret-the-coefficients" class="level3" data-number="4.3.1">
 <h3 data-number="4.3.1" class="anchored" data-anchor-id="how-to-interpret-the-coefficients"><span class="header-section-number">4.3.1</span> How to interpret the coefficients?</h3>
-<p>We start with the interpretation of the autoregressive coefficient. The estimated effect size is 0.536. If web traffic performance gains a certain momentum today, we would expect that it will carry over into future periods with an attrition rate of <span class="math inline">\(0.464\)</span> <span class="math inline">\((1-0.536)\)</span>. This implies that some FourTex customers make repeat web visits due to a gained place of the brand or ads in their memories while others stop visiting after some time because their ad or site memory decays rather quickly.</p>
+<p>We start with the interpretation of the autoregressive coefficient. The estimated effect size is 0.536. If web traffic performance gains a certain momentum today, we would expect that it will carry over into future periods with an attrition rate of <span class="math inline">\(0.464\)</span> <span class="math inline">\((1-0.536)\)</span>. This implies that some FourTex customers make repeat web visits due to a gained place of the brand or ads in their memories, while others stop visiting after some time because their ad or site memory decays rather quickly.</p>
 <p>Next, we look at the advertising media effects. Since this is a log-log model output, the estimated coefficients can be interpreted as <em>elasticities</em>:</p>
 <p><em>The expected % change in our response variable with respect to a % change in our predictor variable, holding other predictor variables constant.</em></p>
 <p>To understand this better, let’s focus on the effect of Google AdWords. Take two values of Google AdWords at two consecutive periods: A1 and A2. Holding the other variables fixed in the above equation, we obtain the following:</p>
@@ -4474,12 +4480,74 @@ Adjusted R-squared:
 <section id="model-diagnostics" class="level2" data-number="4.5">
 <h2 data-number="4.5" class="anchored" data-anchor-id="model-diagnostics"><span class="header-section-number">4.5</span> Model Diagnostics</h2>
 <p>Once we estimate our marketing mix model, it is usually a good practice to perform model diagnostic checks on the estimated residuals. In the marketing mix model above, we assume that residuals are uncorrelated (i.e. independent), have zero mean and constant variance. If the model passes these diagnostics, we conclude that the model is not misspecified and can be used to make statistical inferences and predictions.</p>
+<section id="core-assumptions-of-linear-regression" class="level3" data-number="4.5.1">
+<h3 data-number="4.5.1" class="anchored" data-anchor-id="core-assumptions-of-linear-regression"><span class="header-section-number">4.5.1</span> Core Assumptions of Linear Regression</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Assumption</strong></th>
+<th><strong>Diagnostic Test / Plot</strong></th>
+<th><strong>Explanation</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Linearity</strong></td>
+<td>Residuals vs Fitted Plot</td>
+<td>Residuals should have no pattern (random scatter).</td>
+</tr>
+<tr class="even">
+<td><strong>Independence of errors</strong></td>
+<td>Durbin-Watson Test, ACF Plot</td>
+<td>Especially important in time series data.</td>
+</tr>
+<tr class="odd">
+<td><strong>Homoscedasticity</strong> (constant variance)</td>
+<td>Scale-Location Plot, Residuals vs Fitted Plot</td>
+<td>Variance of residuals should be constant across fitted values.</td>
+</tr>
+<tr class="even">
+<td><strong>Normality of residuals</strong></td>
+<td>Q-Q Plot, Histogram of residuals</td>
+<td>Needed for valid hypothesis tests and confidence intervals.</td>
+</tr>
+<tr class="odd">
+<td><strong>No multicollinearity</strong></td>
+<td>Variance Inflation Factor (VIF)</td>
+<td>Predictors should not be highly correlated.</td>
+</tr>
+<tr class="even">
+<td><strong>No influential outliers</strong></td>
+<td>Cook’s Distance, Standardized Residuals</td>
+<td>Outliers can disproportionately influence the regression line.</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Task 1
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>To <strong>assess the validity of your results</strong>, you need to follow a systematic diagnostic process to test the assumptions of linear regression summarized above. Perform the said residual diagnostics for the model and assess the results. For this assignment, youi are welcome to use AI such as ChatGPT Education, which is free when you log into CPP portal.</p>
+</div>
+</div>
 <p>Next, we turn our attention to the following questions that are central to the case study:</p>
 <ul>
 <li><p>What drives the web traffic performance?</p></li>
 <li><p>What is the traffic return on marketing investment?</p></li>
 <li><p>What is the optimal budget allocation?</p></li>
 </ul>
+</section>
 </section>
 </section>
 <section id="what-drives-web-traffic-performance" class="level1" data-number="5">
@@ -4948,7 +5016,7 @@ What does this figure tell us?
 </div>
 </div>
 <div class="callout callout-style-default callout-note callout-titled" title="Insights">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-22-contents" aria-controls="callout-22" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-23-contents" aria-controls="callout-23" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -4957,7 +5025,7 @@ Insights
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-22" class="callout-22-contents callout-collapse collapse">
+<div id="callout-23" class="callout-23-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>This pie-chart tells us that 61% of the marketing budget was used for TV ads while 16% of the budget went to radio campaigns, 13% for Google AdWords, and 9% for Facebook. Given our findings on the media elasticities, how would you spend the budget? Would you spend so much money on TV ads to boost web traffic?</p>
 </div>
@@ -5098,6 +5166,19 @@ Facebook, TV, Radio}\]</span></p>
 <li><p>perform return on marketing investment analysis</p></li>
 <li><p>allocate marketing budget optimally based on estimated elasticities.</p></li>
 </ul>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Task 2
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>So far, we have built a small table of metrics in a dataframe called df. Make the table presentable using [gt] package. Below the table, explain what each metrics mean. Also, explain why unit effect is the same as TROMI.</p>
+</div>
+</div>
 </section>
 <section id="appendix" class="level1" data-number="9">
 <h1 data-number="9"><span class="header-section-number">9</span> Appendix</h1>
